@@ -80,3 +80,27 @@ body {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
+
+/* Profile Picture Animation */
+.profile-picture {
+    animation: pulse-shadow 2.5s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+    animation-play-state: paused; /* Pause the glow on hover to focus on the scale effect */
+}
+
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 0 0 0px rgba(230, 57, 70, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(230, 57, 70, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0px rgba(230, 57, 70, 0);
+    }
+}
+
