@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Aqyla Syaqeer Dipanegara | Frontend Developer & UI/UX Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="fixed w-full bg-white bg-opacity-80 backdrop-blur-md z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">
+                AS<span class="accent-red">.</span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-semibold">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#contact" class="hidden md:inline-block bg-accent-red text-white font-bold py-2 px-5 rounded-lg hover:bg-red-700 transition-colors">Hire Me</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6">
+
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="w-full text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight reveal">
+                    Hi, I'm Muhammad Aqyla Syaqeer Dipanegara.
+                    <br>
+                    A <span class="accent-red">Frontend Developer & UI/UX Developer</span>
+                </h1>
+                <p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto md:mx-0 text-gray-700 reveal" style="transition-delay: 200ms;">
+                    I build beautiful, responsive, and user-friendly websites that leave a lasting impression. Turning ideas into interactive digital experiences.
+                </p>
+                <div class="mt-10 reveal" style="transition-delay: 400ms;">
+                    <a href="#projects" class="bg-accent-red text-white font-bold py-4 px-8 rounded-lg text-lg hover:bg-red-700 transition-colors">
+                        View My Work
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold reveal">About Me</h2>
+                <div class="w-20 h-1 bg-accent-red mx-auto mt-4 reveal" style="transition-delay: 200ms;"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2 reveal" style="transition-delay: 300ms;">
+                    <img src="profile.png" alt="Muhammad Aqyla Syaqeer Dipanegara Portrait" class="rounded-lg shadow-2xl w-23">
+                </div>
+                <div class="md:w-1/2 reveal about-me-text" style="transition-delay: 400ms;">
+                    <p id="about-p1" class="text-lg text-gray-700 mb-4"></p>
+                    <p id="about-p2" class="text-lg text-gray-700"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold reveal">My Projects</h2>
+                <div class="w-20 h-1 bg-accent-red mx-auto mt-4 reveal" style="transition-delay: 200ms;"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-md reveal" style="transition-delay: 300ms;">
+                    <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=Project+One" alt="Project One" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce Platform</h3>
+                        <p class="text-gray-700 mb-4">A modern e-commerce site built with React, featuring a clean UI and Stripe integration.</p>
+                        <a href="#" class="font-semibold accent-red hover:underline">View Details →</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-md reveal" style="transition-delay: 400ms;">
+                    <img src="https://placehold.co/600x400/e63946/ffffff?text=Project+Two" alt="Project Two" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Data Visualization Dashboard</h3>
+                        <p class="text-gray-700 mb-4">An interactive dashboard for visualizing complex data sets using D3.js and vanilla JS.</p>
+                        <a href="#" class="font-semibold accent-red hover:underline">View Details →</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-md reveal" style="transition-delay: 500ms;">
+                    <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=Project+Three" alt="Project Three" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Corporate Landing Page</h3>
+                        <p class="text-gray-700 mb-4">A sleek and professional landing page designed to boost conversions for a tech startup.</p>
+                        <a href="#" class="font-semibold accent-red hover:underline">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold reveal">Get In Touch</h2>
+                <div class="w-20 h-1 bg-accent-red mx-auto mt-4 reveal" style="transition-delay: 200ms;"></div>
+                <p class="mt-6 text-lg max-w-2xl mx-auto text-gray-700 reveal" style="transition-delay: 300ms;">
+                    Have a project in mind or just want to say hello? I'd love to hear from you.
+                </p>
+                <div class="mt-10 flex flex-col md:flex-row justify-center items-center gap-8 reveal" style="transition-delay: 400ms;">
+                    <!-- Email Card -->
+                    <a href="mailto:syqeer.dip@gmail.com" class="flex items-center gap-4 bg-gray-50 p-4 rounded-lg shadow-sm hover:bg-gray-100 transition-colors w-full md:w-auto justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 accent-red" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        <div class="text-left">
+                            <h3 class="font-semibold text-lg">Email</h3>
+                            <p class="text-gray-700">syqeer.dip@gmail.com</p>
+                        </div>
+                    </a>
+                    <!-- Phone Card -->
+                    <div class="flex items-center gap-4 bg-gray-50 p-4 rounded-lg shadow-sm w-full md:w-auto justify-center">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 accent-red" viewBox="0 0 20 20" fill="currentColor">
+                             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.758c1.37 2.785 3.715 5.13 6.5 6.5l.758-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                           </svg>
+                        <div class="text-left">
+                            <h3 class="font-semibold text-lg">Phone</h3>
+                            <p class="text-gray-700">+62 812 8331 3315</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Muhammad Aqyla Syaqeer Dipanegara. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

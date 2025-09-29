@@ -1,0 +1,82 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Offset for the fixed header */
+}
+
+/* Base styling using the specified color scheme */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* 50% White */
+    color: #1a1a1a; /* 20% Black */
+}
+
+/* Accent color for key elements */
+.accent-red {
+    color: #e63946; /* 30% Red */
+}
+
+.bg-accent-red {
+    background-color: #e63946; /* 30% Red */
+}
+
+/* Custom underline animation for navigation */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: #e63946;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover {
+    color: #e63946;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Project card styling */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Animation for elements fading in on scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styles for the typing animation cursor */
+.typing-cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: #1a1a1a;
+    margin-left: 4px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
