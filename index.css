@@ -104,3 +104,22 @@ body {
     }
 }
 
+/* Skills Section */
+.skill-icon {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.skill-icon img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.skill-icon:hover {
+    transform: translateY(-8px);
+    color: #1a1a1a; /* Black text on hover */
+}
+
+.skill-icon:hover img {
+    filter: grayscale(0%);
+}
+
